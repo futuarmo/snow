@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.2)
+
+project(snow)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+
+set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
+
+set(SNOW_INSTALL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include)
+set(SNOW_INSTALL_BIN_DIR ${PROJECT_SOURCE_DIR}/bin)
+
+add_subdirectory(src)
